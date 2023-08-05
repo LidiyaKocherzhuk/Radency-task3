@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "varsIgnorePattern": "^[A-Z]"
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "no-plusplus": "off",
+    "no-await-in-loop": "off",
+    "no-unreachable-loop": "off",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "camelcase": "off",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      }
+    }
+  }
+}
